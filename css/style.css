@@ -12,7 +12,6 @@ body {
 span.color {
     color: #1ac056;
     font-weight: bold;
-    font-size: 70px;
 }
 
 /*START nav*/
@@ -64,8 +63,6 @@ span.color {
 
 }
 
-#main-header .content-header {}
-
 #main-header h1,
 h2 {
     font-weight: 300;
@@ -75,11 +72,48 @@ h2 {
     font-size: 60px;
 }
 
+#main-header h1 > span {
+    font-size: 75px;
+}
+
 #main-header h2 {
     font-size: 40px;
 }
 
 /*START section.about*/
-section.about {
-    height: 60vh;
+#about {
+    margin-top: 20px;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+#about .container-about {
+    display: flex;
+    justify-content: center;
+}
+
+#about .container-about .about-content {
+    flex-basis: 40%;
+    align-self: center;
+}
+
+#about .container-about .about-content > img {
+    height: 300px;
+}
+
+/*START section.skills*/
+#skills {
+    height: 80vh;
+}
+
+/*START footer*/
+.footer {
+    text-align: right;
+    background-color: #13212c;
+    color: aliceblue;
+    padding: 15px;
 }
