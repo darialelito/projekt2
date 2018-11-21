@@ -83,6 +83,7 @@ h2 {
 /*START section.about*/
 #about {
     margin-top: 20px;
+    margin-bottom: 100px;
 }
 
 #about h2 {
@@ -107,8 +108,59 @@ h2 {
 
 /*START section.skills*/
 #skills {
-    height: 80vh;
+    margin: 20px 60px 100px;
+    text-align: center;
 }
+
+#skills h2 {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+#skills .skills-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+/*START section-portfolio*/
+#portfolio {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+#portfolio .container-portfolio {
+    display: flex;
+    justify-content: center;
+}
+
+
+#portfolio .container-portfolio .portfolio-item {
+    flex-basis: 33.333%;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#portfolio .container-portfolio .port-one {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+#portfolio .container-portfolio .port-two {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+#portfolio .container-portfolio .port-three {
+    background-image: url(../img/portfolio4.jpg);
+}
+
+
 
 /*START footer*/
 .footer {
