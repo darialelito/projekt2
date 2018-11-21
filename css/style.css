@@ -1,4 +1,3 @@
-/*font-family: 'Lato', sans-serif;*/
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,6 @@ span.color {
     top: 0;
     right: 0;
 }
-
 
 #main-nav ul {
     display: flex;
@@ -60,7 +58,6 @@ span.color {
     background-repeat: no-repeat;
     text-align: center;
     color: white;
-
 }
 
 #main-header h1,
@@ -141,13 +138,13 @@ h2 {
     justify-content: center;
 }
 
-
 #portfolio .container-portfolio .portfolio-item {
     flex-basis: 33.333%;
     height: 350px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 
 #portfolio .container-portfolio .port-one {
@@ -162,6 +159,40 @@ h2 {
     background-image: url(../img/portfolio4.jpg);
 }
 
+#portfolio .container-portfolio .portfolio-item .port-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    top: 0;
+    background-color: rgba(77, 25, 45, 0.5);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+#portfolio .container-portfolio .portfolio-item .port-mask .border {
+    position: relative;
+    height: 100%;
+    border: 1px solid #fff;
+}
+
+#portfolio .container-portfolio .portfolio-item .port-mask .border .portfolio-content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 0 10px;
+    transform: translateY(-50%);
+}
+
+#portfolio .container-portfolio .portfolio-item .port-mask:hover {
+    opacity: 1;
+}
+
+#portfolio .container-portfolio .portfolio-item .port-mask p {
+    font-size: 15px;
+    color: #fff;
+}
+
 /*START section-contact*/
 #contact {
     min-height: 40vh;
@@ -173,12 +204,12 @@ h2 {
 #contact .container-contact {
     display: flex;
     justify-content: space-evenly;
-    /*    justify-content: center;*/
 }
 
 #contact .container-contact .contact-content {
     flex-basis: 40%;
     font-size: 20px;
+    font-weight: 300;
 }
 
 #contact .container-contact .contact-content h3 {
@@ -219,7 +250,6 @@ textarea {
 #contact .social-icons a:hover {
     color: limegreen;
     border-color: limegreen;
-    /*    transform: rotate(180deg);*/
 }
 
 #contact .social-icons a:hover i {
