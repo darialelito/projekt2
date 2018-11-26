@@ -1,3 +1,3 @@
-# projekt2
-Projekt wykonany na podstawie szablonu z kursu Akademia 108.
-Strona nie jest responsywna.
+# second-web-template
+
+Project based on pattern from Akademia 108 curse.
